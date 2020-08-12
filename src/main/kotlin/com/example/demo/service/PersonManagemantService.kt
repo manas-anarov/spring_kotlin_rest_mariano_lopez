@@ -8,8 +8,8 @@ interface PersonManagemantService {
 
     fun findById(id:Long): PersonResponse?
     fun findAll(): List<PersonResponse>
-    fun save(addPersonRequest: AddPersonRequest)
-    fun update(updatePersonRequest: UpdatePersonRequest)
+    fun save(addPersonRequest: AddPersonRequest): PersonResponse
+    fun update(updatePersonRequest: UpdatePersonRequest): PersonResponse
     fun deleteById(id:Long)
 
 }
